@@ -25,9 +25,6 @@ export default function Login({ onAdminLogin, navigate }) {
       provider: 'google',
       options: {
         redirectTo: 'https://tamourrai123-ctrl.github.io/Web-Engineering-Project-I/',
-        queryParams: {
-          response_type: 'token',
-        }
       },
     });
     if (error) setError(error.message);
