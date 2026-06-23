@@ -23,7 +23,7 @@ export default function Login({ onAdminLogin, navigate }) {
     clear();
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'google',
-      options: { redirectTo: window.location.origin },
+      options: { redirectTo: 'https://tamourrai123-ctrl.github.io/Web-Engineering-Project-I/' },
     });
     if (error) setError(error.message);
   };
