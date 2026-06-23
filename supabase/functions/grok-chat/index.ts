@@ -30,7 +30,7 @@ Deno.serve(async (req) => {
       },
       body: JSON.stringify({
         model: "llama-3.3-70b-versatile",
-        messages: messages,
+        messages,
         max_tokens: 1000,
       }),
     });
